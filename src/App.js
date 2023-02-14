@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Bar from './Page/Bar';
+import Cards from './Page/MediaCard';
+import Components from './Page/Components';
+
+import Mini from './Page/Mini';
+import Para from './Page/Para';
+import MediaCard from './Page/MediaCard';
+
+import MiniBar from './MiniBar';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <MiniBar/>
+   {/* <div>
+      <a href='#' className="text-black hover:text-blue-500 p-5">services</a>
+      <a href='#'>home</a>
+      <a href='#'>about</a>
+  </div>*/}
+ <Bar/>
+ <Para/>
+ <Mini/>
+ <MediaCard/>
+ 
+  
+    </>
+  )
 }
-
 export default App;
